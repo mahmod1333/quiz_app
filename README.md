@@ -6,6 +6,12 @@ Note: (Ini Script Orang yg Saya Upload Agar Supaya Memudahkan Saja Untuk Di Inst
 
 git clone https://github.com/Senitopeng/Botkomena.git
 
-Tulis Bot Komen Kamu Dalam msg.txt
+cd Botkomena
+
+pkg install python2
+
+pip2 install requests
+
+pip2 install mechanize
 
 python2 botkomen.py
