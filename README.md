@@ -14,4 +14,4 @@ pip2 install requests
 
 pip2 install mechanize
 
-python2 botkomen.py
+python2 botkomena.py
