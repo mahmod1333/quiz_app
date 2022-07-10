@@ -10,30 +10,30 @@
 </head>
 
 <body>
-    <div class="quiz-container">
+    <div class="quiz-container" >
         <div class="quiz-header">
-            <h1>Questions</h1>
+            <h1 id="question" >Questions</h1>
             <ul>
-                <li><input type="radio" name="ansers" id="question">
-                    <label for="a">
+                <li><input type="radio" name="answer" id="text_a">
+                    <label for="a" id="a_text">
+                        question
+                    
+                    </input>
+                </li>
+                <li><input type="radio" name="answer" >
+                    <label for="a" id="b_text" >
                         question
                     </label>
                     </input>
                 </li>
-                <li><input type="radio" name="ansers" id="question">
-                    <label for="a">
+                <li><input type="radio" name="answer" >
+                    <label for="a" id="c_text" >
                         question
                     </label>
                     </input>
                 </li>
-                <li><input type="radio" name="ansers" id="question">
-                    <label for="a">
-                        question
-                    </label>
-                    </input>
-                </li>
-                <li><input type="radio" name="ansers" id="question">
-                    <label for="a">
+                <li><input type="radio" name="answer" >
+                    <label for="a" id="d_text">
                         question
                     </label>
                     </input>
@@ -41,8 +41,9 @@
             </ul>
             
         </div>
-        <button class="btn">Submit</button>
+        <button id="btn">Submit</button>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

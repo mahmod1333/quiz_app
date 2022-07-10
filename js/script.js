@@ -26,5 +26,40 @@ const quiz = [
         answers: ["tool","object","variable","property"],
         correctAnswer: "property",
     }];
+    const quiz_content = document.querySelector(".quiz-header");
+ const question = document.getElementById("question");
+    const a_text = document.getElementById("a_text");
+    const b_text = document.getElementById("b_text");
+    const c_text = document.getElementById("c_text");
+    const d_text = document.getElementById("d_text");
+    const btn = document.getElementById("btn");
+    let currentQuestion = 0;
+    const quizlod = () => {
+        question.innerHTML = quiz[currentQuestion].question;
+        a_text.innerHTML = quiz[currentQuestion].answers[0];
+        b_text.innerHTML = quiz[currentQuestion].answers[1];
+        c_text.innerHTML = quiz[currentQuestion].answers[2];
+        d_text.innerHTML = quiz[currentQuestion].answers[3];
+    }
+    quizlod();
+    btn.addEventListener("click", () => {
+        if (quiz[currentQuestion].answers[0] === quiz[currentQuestion].correctAnswer) {
+            alert("correct");
+        } else {
+            alert("wrong");
+        }
+        currentQuestion++;
+        if (currentQuestion === quiz.length) {
+       quiz_content.innerHTML = "<h2>you are done</h2>";
+         btn.innerHTML = "Restart";
+         btn.addEventListener("click", () => {
+            location.reload();
+         }
+         )
+
+        }
+        quizlod();
+    }
+    );
 
       
